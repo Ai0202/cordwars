@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1597063253507" clover="3.2.0">
-  <project timestamp="1597063253508" name="All files">
+<coverage generated="1597064089357" clover="3.2.0">
+  <project timestamp="1597064089357" name="All files">
     <metrics statements="13" coveredstatements="13" conditionals="6" coveredconditionals="6" methods="1" coveredmethods="1" elements="20" coveredelements="20" complexity="0" loc="13" ncloc="13" packages="1" files="1" classes="1"/>
     <file name="drivingSchool2.ts" path="/Users/atsushi/projects/personal/tutorials/cordwars/src/drivingSchool2.ts">
       <metrics statements="13" coveredstatements="13" conditionals="6" coveredconditionals="6" methods="1" coveredmethods="1"/>
       <line num="1" count="1" type="stmt"/>
-      <line num="2" count="6" type="stmt"/>
-      <line num="3" count="6" type="stmt"/>
-      <line num="4" count="6" type="stmt"/>
-      <line num="5" count="6" type="stmt"/>
-      <line num="7" count="6" type="cond" truecount="2" falsecount="0"/>
-      <line num="8" count="4" type="stmt"/>
-      <line num="10" count="4" type="cond" truecount="2" falsecount="0"/>
-      <line num="12" count="3" type="stmt"/>
-      <line num="13" count="3" type="stmt"/>
-      <line num="15" count="3" type="cond" truecount="2" falsecount="0"/>
+      <line num="2" count="7" type="stmt"/>
+      <line num="3" count="7" type="stmt"/>
+      <line num="4" count="7" type="stmt"/>
+      <line num="5" count="7" type="stmt"/>
+      <line num="7" count="7" type="cond" truecount="2" falsecount="0"/>
+      <line num="8" count="5" type="stmt"/>
+      <line num="10" count="5" type="cond" truecount="2" falsecount="0"/>
+      <line num="12" count="4" type="stmt"/>
+      <line num="13" count="4" type="stmt"/>
+      <line num="15" count="4" type="cond" truecount="2" falsecount="0"/>
       <line num="16" count="1" type="stmt"/>
       <line num="18" count="1" type="stmt"/>
     </file>
