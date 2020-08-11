@@ -5,11 +5,11 @@ export const cost = (mins: number) => {
   let cost = costOfFirstAnHour;
   
   if (mins <= 60 + serviceTime) return cost;
-  mins = mins - 60;
+  mins -= 60;
   
   if (mins <= 30) return cost += costOfEvery30min;
   
-  cost += Math.floor(mins / 30) * 10;
+  cost += Math.floor(mins / 30) * costOfEvery30min;
   mins = mins % 30;
   
   if (mins <= serviceTime) return cost;
@@ -17,3 +17,6 @@ export const cost = (mins: number) => {
   
   return cost;
 }
+
+export const costSample = (mins: number) =>
+         30 + (mins > 65 ? Math.ceil((mins - 65) / 30) : 0) * 10;
