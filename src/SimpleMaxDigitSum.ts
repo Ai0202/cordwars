@@ -1,6 +1,4 @@
-export const SimpleMaxDigitSum = (n: number): any => {
-  console.log(111)
-
+export const SimpleMaxDigitSum1 = (n: number): any => {
   /**
    * 1つ下の桁で最大
    * 1501から1998はチェック不要
@@ -85,4 +83,64 @@ export const SimpleMaxDigitSum = (n: number): any => {
   //   }
   // }
   // return result;
+}
+
+// 各桁の合計が最も多きい数字を返す
+export const SimpleMaxDigitSum = (n: number): number => {
+
+  // チェックする範囲を絞る
+  /**
+   * 最も値が大きくなる範囲
+   * 100
+   * 99
+   * 
+   * 200 
+   * 99
+   * 199
+   * 
+   * 220
+   * 99
+   * 199
+   * 219
+   *  ==> 各桁の最大値の組み合わせだけ調べる
+   * 220
+   * 219
+   * 199
+   * 
+   * 150
+   * 150
+   * 149
+   *  99
+   *  227
+   *  219 227 - 8
+   *  199 227 - 28
+   *  1の位から順番に9にする
+   *  
+   *  10でわったあまり - 1
+   *  100でわったあまり - 10
+   */
+
+  // チェックする
+  const numLen = String(n).split("").length;
+
+  const calcDigitSum = (n: number): number => {
+    return [...String(n)]
+      .map((str) => Number(str))
+      .reduce((a, b) => a + b);
+  }
+
+  let maxNum = n;
+  let maxDigitSum = calcDigitSum(maxNum);
+
+  for (let i = 1; i < numLen; i++) {
+    const tmpNum = n - (n % (10 ** i)) - 1;
+    const tmpDigitSum = calcDigitSum(tmpNum);
+
+    if (tmpDigitSum > maxDigitSum) {
+      maxDigitSum = tmpDigitSum;
+      maxNum = tmpNum;
+    }
+  }
+
+  return maxNum;
 }

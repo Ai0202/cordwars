@@ -1,4 +1,4 @@
-import { SimpleMaxDigitSum } from "../src/SimpleMaxDigitSum";
+import { SimpleMaxDigitSum } from "../src/simpleMaxDigitSum";
 
 describe("自分の回答", () => {
   test("nが答えのとき", () => {

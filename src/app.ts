@@ -1,5 +1,5 @@
 import * as Express from "express";
-import { SimpleMaxDigitSum } from "./SimpleMaxDigitSum"
+import { SimpleMaxDigitSum } from "./simpleMaxDigitSum"
 
 const app = Express();
 app.get("/", (req, res) => {
