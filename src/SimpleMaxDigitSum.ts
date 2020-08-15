@@ -1,5 +1,5 @@
 export const SimpleMaxDigitSum = (n: number): any => {
-
+  console.log(111)
 
   /**
    * 1つ下の桁で最大
@@ -64,6 +64,7 @@ export const SimpleMaxDigitSum = (n: number): any => {
     
     result = n - num;
   }
+  
   return result;
 
 
